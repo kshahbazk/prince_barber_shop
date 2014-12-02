@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Prince Barber Shop</string>
+    <string name="hello_world">Splash Test</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">Splash</string>
+
+</resources>
