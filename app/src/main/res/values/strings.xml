@@ -2,8 +2,9 @@
 <resources>
 
     <string name="app_name">Prince Barber Shop</string>
-    <string name="hello_world">Splash Test</string>
+    <string name="hello_world">Welcome to Prince Barber Shop</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
 
 </resources>

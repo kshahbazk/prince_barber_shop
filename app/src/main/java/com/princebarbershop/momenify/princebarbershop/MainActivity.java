@@ -1,43 +1,20 @@
 package com.princebarbershop.momenify.princebarbershop;
 
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.net.Uri;
-import android.content.Intent;
-import android.view.KeyEvent;
+
 
 
 public class MainActivity extends Activity {
 
     private WebView myWebView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-
-        Thread splash = new Thread(){
-
-            public void run(){
-                try {
-                    sleep(5000);
-                }
-                catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                finally {
-                    startActivity(new Intent(getApplicationContext(), Splash.class));
-                    finish();
-                }
-            }
-        };
-
-        splash.start();
-        splash.stop();
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -64,6 +41,11 @@ public class MainActivity extends Activity {
 
 
         }
+
+
+
+
+
     }
 
 

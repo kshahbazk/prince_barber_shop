@@ -18,18 +18,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
-        <WebView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/webview"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
 
-        <activity
-            android:name="com.princebarbershop.momenify.princebarbershop.Splash"
-            android:label="@string/title_activity_splash" >
-        </activity>
+    </activity>
     </application>
 
 </manifest>
