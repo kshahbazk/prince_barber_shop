@@ -18,6 +18,27 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+        Thread splash = new Thread(){
+
+            public void run(){
+                try {
+                    sleep(5000);
+                }
+                catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                finally {
+                    startActivity(new Intent(getApplicationContext(), Splash.class));
+                    finish();
+                }
+            }
+        };
+
+        splash.start();
+        splash.stop();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -39,22 +60,8 @@ public class MainActivity extends Activity {
             }
         });
 
-        Thread splash = new Thread(){
 
-            public void run(){
-                try {
-                    sleep(5000);
-                }
-                catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                finally {
-                    startActivity(new Intent(getApplicationContext(), Splash.class));
-                    finish();
-                }
-            }
-        };
-        splash.start();
+
 
         }
     }
